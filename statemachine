@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ClassLibrary1
+{
+    public class PlayerState
+    {
+        float x;
+        float y;
+    }
+
+    public class GroundedState : PlayerState
+    {
+        
+        //integrate input handling 
+        
+        //when ground there should a tighter turn around time when switching from moving left to right or vice versa
+        void MoveLeft(float movementValue)
+        {
+
+        }
+
+        void Jump(float jumpHeight)
+        {
+            //change player state to airborne
+        }
+    }
+
+    public class AirborneState : PlayerState
+    {
+        //physics will be loser, harded to change direction while in air
+    }
+}
